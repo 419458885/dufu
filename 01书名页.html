@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-darkmode="light">
+    <head>
+        <meta charset="UTF-8">
+        <title>书名页</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="heti.min.css">
+        <script src="heti-addon.min.js"></script>
+    </head>
+    <body>
+        <main class="container">
+            <article class="article heti">
+                <div class="heti heti--poetry">
+                    <p class="heti-x-large">
+                        杜甫绝句注释<br/>
+                        熊柏畦<br/>
+                        *<br/>
+                        江西人民出版社出版<br/>
+                        （南昌市第四交通路铁道东路）<br/>
+                        江西新华印刷厂印刷<br/>
+                        江西省新华书店发行 各地新华书店经售<br/>
+                        *<br/>
+                        开本：787×1092 1/32 3.25印张 70千字<br/>
+                        1982年11月第1版  1982年11月第1次印刷<br/>
+                        印数1—46,000<br/>
+                        统一书号：10110·240	定价0.30元<br/>
+                    </p>
+                </div>
+            </article>
+        </main>
+        
+  <aside class="panel">
+    <ul class="panel-list panel-list--gray">
+      <li><input type="radio" class="J_fontStack" value="heti--classic" name="font" id="font-classic" checked><label for="font-classic">传统</label></li>
+      <li><input type="radio" class="J_fontStack" value="heti--sans" name="font" id="font-sans"><label for="font-sans">黑体</label></li>
+      <li><input type="radio" class="J_fontStack" value="heti--serif" name="font" id="font-serif"><label for="font-serif">宋体</label></li>
+    </ul>
+    <ul class="panel-list panel-list--gray">
+      <li><input type="radio" class="J_radioGrid" value="" name="grid" id="grid-disable" checked><label for="grid-disable">网格：关</label></li>
+      <li><input type="radio" class="J_radioGrid" value="grid-24" name="grid" id="grid-24"><label for="grid-24">大</label></li>
+      <li><input type="radio" class="J_radioGrid" value="grid-12" name="grid" id="grid-12"><label for="grid-12">小</label></li>
+    </ul>
+    <ul class="panel-list panel-list--gray panel-list--icon">
+      <li><input type="radio" class="J_darkMode" value="auto" name="darkmode" id="darkmode-auto" checked><label for="darkmode-auto">🌗</label></li>
+      <li><input type="radio" class="J_darkMode" value="light" name="darkmode" id="darkmode-light"><label for="darkmode-light">🌞</label></li>
+      <li><input type="radio" class="J_darkMode" value="dark" name="darkmode" id="darkmode-dark"><label for="darkmode-dark">🌙</label></li>
+    </ul>
+  </aside>
+  <script>
+    const $$root = document.getElementsByTagName('html')[0]
+    const $$main = document.getElementsByTagName('main')[0]
+    const $$article = document.getElementsByTagName('article')[0]
+
+    function addEventListeners(nodeList, event, fn) {
+      [].forEach.call(nodeList, function(elm) {
+        elm.addEventListener(event, fn, false)
+      }, false)
+    }
+
+    addEventListeners(document.getElementsByClassName('J_darkMode'), 'change', function (e) {
+      $$root.setAttribute('data-darkmode', e.target.value)
+    })
+
+    addEventListeners(document.getElementsByClassName('J_radioGrid'), 'change', function (e) {
+      $$main.setAttribute('data-bg-grid', e.target.value)
+    })
+
+    addEventListeners(document.getElementsByClassName('J_fontStack'), 'change', function (e) {
+      $$article.className = ['article', 'heti', e.target.value].join(' ')
+    })
+
+    const heti = new Heti('.article')
+    heti.autoSpacing()
+  </script>
+    </body>
+</html>
