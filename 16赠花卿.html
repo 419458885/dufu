@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
     <body>
         <main class="container">
@@ -16,6 +17,13 @@
 </p><p id='fn-02'><a href='#ref-02' title='移至'>[2]</a>锦城：成都别名，亦称锦官城。丝管，弦乐和管乐。</p><p class='heti-large'></p></div><h3>〔说明〕</h3><div class='heti heti--ancient'><p class='heti-large'>这是杜甫借题讽剌并警告武人的一首杰作，最得历来诗评家的赞美：明人焦竑说：“花卿恃功骄恣，杜公讥之，而含蓄不露，有风人‘言者无罪闻者足戒’之旨。公绝句百余首，此为之冠。”杨慎说：“花卿在蜀，颇用天子礼乐，子美作此讽之，而意在言外，最得诗人之旨。当时锦城妓女，独以此诗入歌，亦有见哉！”清人王嗣奭说：“胡元瑞因李群玉有赠歌妓诗相同，因以花卿为歌妓。窃谓此诗非歌妓所能当，其为花敬定无疑。其人恃功骄恣，故语含讽剌，‘能得几回闻’，言其必不能久也。”浦起龙说：“若作赠妓诗，反觉肤浅少味。”仇兆鳌说：“此诗风华清丽，顿挫抑扬，虽太白少伯，无以过之。其首句点量题，而下作承转，乃绝句正法也。”</p></div>
             </article>
             <p class="heiti-small"><center><a href='15少年行二首.html'>上页</a>&nbsp;<a href='index.html#no16'>返回列表</a>&nbsp;<a href='17李司马桥成承高使君自成都回.html'>下页</a></center></p>
+            <div id="waline"></div>
+            <script>
+            Waline({
+                el: '#waline',
+                serverURL: 'https://dufu-api.vercel.app',
+            });
+  </script>
         </main>
   <script>
     const heti = new Heti('.article')

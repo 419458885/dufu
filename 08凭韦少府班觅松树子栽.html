@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
     <body>
         <main class="container">
@@ -19,6 +20,13 @@
 仇兆鳌说：“不露一松字，却句句切松，较之他章，独有蕴藉。”</p><p class='heti-large'></p></div>
             </article>
             <p class="heiti-small"><center><a href='07凭何十一少府邕觅桤木栽.html'>上页</a>&nbsp;<a href='index.html#no8'>返回列表</a>&nbsp;<a href='09又于韦处乞大邑瓷碗.html'>下页</a></center></p>
+            <div id="waline"></div>
+            <script>
+            Waline({
+                el: '#waline',
+                serverURL: 'https://dufu-api.vercel.app',
+            });
+  </script>
         </main>
   <script>
     const heti = new Heti('.article')

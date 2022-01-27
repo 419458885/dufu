@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
     <body>
         <main class="container">
@@ -17,6 +18,13 @@
 </p><p id='fn-03'><a href='#ref-03' title='移至'>[3]</a>青竹：即竹马，儿童当作马骑的竹竿。《后汉书•郭伋传》：“始至行部，到河西美稷，有童儿数百，各骑竹马，于道次迎拜。”</p><p class='heti-large'></p></div><h3>〔说明〕</h3><div class='heti heti--ancient'><p class='heti-large'>这诗前二句赞美李司马善于发动群众,群众也卖力，出乎意外地三天便将竹桥造成。后二句用郭伋典故，赞美高适得到人民乃至儿童的欢迎。</p></div>
             </article>
             <p class="heiti-small"><center><a href='16赠花卿.html'>上页</a>&nbsp;<a href='index.html#no17'>返回列表</a>&nbsp;<a href='18少年行.html'>下页</a></center></p>
+            <div id="waline"></div>
+            <script>
+            Waline({
+                el: '#waline',
+                serverURL: 'https://dufu-api.vercel.app',
+            });
+  </script>
         </main>
   <script>
     const heti = new Heti('.article')

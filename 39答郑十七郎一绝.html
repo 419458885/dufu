@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
     <body>
         <main class="container">
@@ -19,6 +20,13 @@
 </p><p id='fn-05'><a href='#ref-05' title='移至'>[5]</a>当时：汉代人郑庄之名。他热爰朋友，置驿迎宾。这句以他比郑十七郎。</p><p class='heti-large'></p></div><h3>〔说明〕</h3><div class='heti heti--ancient'><p class='heti-large'>作者在云安，与郑氏兄弟往来很密，在这次携酒赋诗之后，郑十七又留宴，作者写这诗答谢他。由于郑十八是弟，又会写文章，故以陆云相比；郑十七于酒后又重行设宴，因以爱宾客的郑当时相比。诗的前二句，是写宴饮时的景物，用作陪衬。</p></div>
             </article>
             <p class="heiti-small"><center><a href='38绝句三首.html'>上页</a>&nbsp;<a href='index.html#no39'>返回列表</a>&nbsp;<a href='40三绝句.html'>下页</a></center></p>
+            <div id="waline"></div>
+            <script>
+            Waline({
+                el: '#waline',
+                serverURL: 'https://dufu-api.vercel.app',
+            });
+  </script>
         </main>
   <script>
     const heti = new Heti('.article')

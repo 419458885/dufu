@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
     <body>
         <main class="container">
@@ -16,6 +17,13 @@
 </p><p id='fn-02'><a href='#ref-02' title='移至'>[2]</a>旌（京jīng）旗：旗帜。</p><p class='heti-large'></p></div><h3>〔说明〕</h3><div class='heti heti--ancient'><p class='heti-large'>踏青本是赏心悦目的事，但由于宝应元年，吐蕃入侵到四川西山，成都戒严，这诗便表达了当时紧张的气氛：见到的只是旌旗，听到的只有鼓角，不仅毫无游兴，并顿起悲凉之感。杜甫的关心国事，以外敌为忧，随处可见。</p></div>
             </article>
             <p class="heiti-small"><center><a href='18少年行.html'>上页</a>&nbsp;<a href='index.html#no19'>返回列表</a>&nbsp;<a href='20中丞严公雨中垂寄见忆一绝奉答二绝.html'>下页</a></center></p>
+            <div id="waline"></div>
+            <script>
+            Waline({
+                el: '#waline',
+                serverURL: 'https://dufu-api.vercel.app',
+            });
+  </script>
         </main>
   <script>
     const heti = new Heti('.article')
