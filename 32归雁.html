@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
     <body>
         <main class="container">
@@ -18,7 +18,13 @@
 </p><p id='fn-03'><a href='#ref-03' title='移至'>[3]</a>江城：指成都。成都傍着锦江。</p><p class='heti-large'></p></div><h3>〔说明〕</h3><div class='heti heti--ancient'><p class='heti-large'>这诗也是托物寄意。看到雁的北返，引起自己思归之念。二十字中，隐含无限凄苦情绪。“高高”二字，传出歆羡怅望之神，韵味高远。</p></div>
             </article>
             <p class="heiti-small"><center><a href='31王录事许修草堂资不到聊小诘.html'>上页</a>&nbsp;<a href='index.html#no32'>返回列表</a>&nbsp;<a href='33绝句二首.html'>下页</a></center></p>
-
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://dufu-api.vercel.app',
+    });
+  </script>
         </main>
   <script>
     const heti = new Heti('.article')

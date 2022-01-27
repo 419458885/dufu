@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
     <body>
         <main class="container">
@@ -17,7 +17,13 @@
 </p><p id='fn-02'><a href='#ref-02' title='移至'>[2]</a>朱樱：深红色的樱桃。《永徽图径》：“樱桃洛中者胜，深红色日朱樱，明黄色曰蜡樱”。</p><p class='heti-large'></p></div><h3>〔说明〕</h3><div class='heti heti--ancient'><p class='heti-large'>这诗前二句从寺前景物起兴：看到的是垂垂的朱樱果实和一片不知谁家的田亩，说明这是春末夏初的时候。后二句写离别的情绪：在他乡万里相逢，偏偏又要离别，只有握手致意，依依不舍。并赞美辛员外的高才，使人仰望。</p></div>
             </article>
             <p class="heiti-small"><center><a href='24戏为六绝句.html'>上页</a>&nbsp;<a href='index.html#no25'>返回列表</a>&nbsp;<a href='26得房公池鹅.html'>下页</a></center></p>
-
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://dufu-api.vercel.app',
+    });
+  </script>
         </main>
   <script>
     const heti = new Heti('.article')

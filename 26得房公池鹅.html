@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
     <body>
         <main class="container">
@@ -19,7 +19,13 @@
 </p><p id='fn-04'><a href='#ref-04' title='移至'>[4]</a>笼随王右军，《晋书・王羲之传》：“性爱鹅。山阴一道士，好养鹅，羲之往观焉，意甚悦，固求市之。道士云：‘为写《道德经》，当举群相赠耳’羲之欣然写毕，笼鹅而归，甚以为乐。”羲之曾任右将军，故称右军。</p><p class='heti-large'></p></div><h3>〔说明〕</h3><div class='heti heti--ancient'><p class='heti-large'>这是杜甫得到池鹅后，以欣悦的态度写的一首诗。前二句赞美鹅群活泼洁白可喜，后二句用王羲之写经换鹅故事，调皮地对房琯说，这群鹅被我得到了，你应该恋羡不舍吧。诗很有风趣，也表现了杜甫和王羲之有同样的爱好。杜甫也工书法，《壮游》诗说：“七龄作大字”，因自比王右军。</p></div>
             </article>
             <p class="heiti-small"><center><a href='25惠义寺园送辛员外.html'>上页</a>&nbsp;<a href='index.html#no26'>返回列表</a>&nbsp;<a href='27答杨梓州.html'>下页</a></center></p>
-
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://dufu-api.vercel.app',
+    });
+  </script>
         </main>
   <script>
     const heti = new Heti('.article')

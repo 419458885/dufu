@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
     <body>
         <main class="container">
@@ -21,7 +21,13 @@
 </p><p id='fn-13'><a href='#ref-13' title='移至'>[3]</a>山水、骅骝（良马）：均指纸上画的。这两句说，郑虔死了，天下已经没有好的纸上山水；曹霸老了，但他画的马不为世人所重。</p><p class='heti-large'></p></div><h3>〔说明〕</h3><div class='heti heti--ancient'><p class='heti-large'>这种在一首诗中分咏一存一殁的两个友人的方式，是杜甫的创举。宋洪迈《客斋续笔》说：“于美存殁绝句，每篇一存一殁，盖席谦、曹霸存，毕曜、郑虔殁也。鲁直《荆江亭即事二首》：其一云：‘闭门觅句陈无己，对客挥毫秦少游。正字不知温饱未？西风吹泪古藤州’乃用此体，时少游殁而无己存也。”两诗俱用偶句，最合分咏。杨伦说：“玉局二句淡而悲，天下二句哀而壮，皆绝调也。”</p></div>
             </article>
             <p class="heiti-small"><center><a href='44夔州歌十绝句.html'>上页</a>&nbsp;<a href='index.html#no45'>返回列表</a>&nbsp;<a href='46解闷十二首.html'>下页</a></center></p>
-
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://dufu-api.vercel.app',
+    });
+  </script>
         </main>
   <script>
     const heti = new Heti('.article')

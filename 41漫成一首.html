@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
     <body>
         <main class="container">
@@ -18,7 +18,13 @@
 </p><p id='fn-03'><a href='#ref-03' title='移至'>[3]</a>拨剌（拨辣bōlà）：鱼跳的声音。沈与求《舟过北塘》诗：“过雁参差影，跳鱼拨剌声”。</p><p class='heti-large'></p></div><h3>〔说明〕</h3><div class='heti heti--ancient'><p class='heti-large'>这诗写舟中夜景，画不能到：江上的月亮，虽远而似近，甚至可以用尺量，是虚写。风樯挂灯，逐渐昏暗，借以知道夜深，是实写。宿鹭静，是岸边所见；跳鱼鸣，是水中所闻。全诗静中有动，形象鲜明，远近划然，可分可合，风味绝佳，耐人寻玩。虽用偶句，仍极生动。</p></div>
             </article>
             <p class="heiti-small"><center><a href='40三绝句.html'>上页</a>&nbsp;<a href='index.html#no41'>返回列表</a>&nbsp;<a href='42武侯庙.html'>下页</a></center></p>
-
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://dufu-api.vercel.app',
+    });
+  </script>
         </main>
   <script>
     const heti = new Heti('.article')

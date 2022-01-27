@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
     <body>
         <main class="container">
@@ -25,7 +25,13 @@
 </p><p id='fn-62'><a href='#ref-62' title='移至'>[2]</a>这两句竟欲和无知的花朵商量缓开，造语似痴而实隽，大概是由于花尽老催，无可奈何而出此奇想。</p><p class='heti-large'></p></div><h3>〔说明〕</h3><div class='heti heti--ancient'><p class='heti-large'>这组诗以第一首中“颠狂”二字为纲领，以下名首，均从此意出发。或正写，或反写，或明写，或暗写，或写人，或写物，而以末首作一总结，寓“颠狂”之意到了极处，且与第一、第二首均相呼应，章法绵密，有词皆妙。无语不奇，爱花、惜花深情，跃然纸上。宋人刘须溪说：“每诵数句，可歌可舞，能使老人复少。”</p></div>
             </article>
             <p class="heiti-small"><center><a href='13春水生二绝.html'>上页</a>&nbsp;<a href='index.html#no14'>返回列表</a>&nbsp;<a href='15少年行二首.html'>下页</a></center></p>
-
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://dufu-api.vercel.app',
+    });
+  </script>
         </main>
   <script>
     const heti = new Heti('.article')

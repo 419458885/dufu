@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
     <body>
         <main class="container">
@@ -24,7 +24,13 @@
 </p><p class='heti-large'></p></div><h3>〔说明〕</h3><div class='heti heti--ancient'><p class='heti-large'>这组诗是杜甫绝句中的“三吏”“三别”，全是事实，足补史书之缺，杜诗之被称为“诗史”者在此。第一首谴责地方军阀戕杀文官和他们的家属的残暴专横罪行，呼之为“群盗大声呵斥，不留余地。笫二首同情人民苦难，写得凄惨绝伦。末句如闻其声，如见其人，令人不堪卒读。第三首以事实来揭露所谓官军杀掠奸淫的罪行，并指斥他们和异族入寇并无不同。杨伦说：“笔力横绝，此等绝句，亦非他人所能有。”这组诗不拘平仄和韵脚，是古绝句作法。</p></div>
             </article>
             <p class="heiti-small"><center><a href='39答郑十七郎一绝.html'>上页</a>&nbsp;<a href='index.html#no40'>返回列表</a>&nbsp;<a href='41漫成一首.html'>下页</a></center></p>
-
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://dufu-api.vercel.app',
+    });
+  </script>
         </main>
   <script>
     const heti = new Heti('.article')

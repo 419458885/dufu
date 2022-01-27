@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
     <body>
         <main class="container">
@@ -20,7 +20,13 @@
 </p><p id='fn-05'><a href='#ref-05' title='移至'>[5]</a>与致：给我送来。这句说：请您赠送将来能遮阴十亩的树苗这些树苗，不久便取得“桤林碍日”的作用。</p><p class='heti-large'></p></div>
             </article>
             <p class="heiti-small"><center><a href='06从韦二明府续处觅绵竹.html'>上页</a>&nbsp;<a href='index.html#no7'>返回列表</a>&nbsp;<a href='08凭韦少府班觅松树子栽.html'>下页</a></center></p>
-
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://dufu-api.vercel.app',
+    });
+  </script>
         </main>
   <script>
     const heti = new Heti('.article')
