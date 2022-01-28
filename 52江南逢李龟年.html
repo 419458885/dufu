@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hans" data-darkmode="light">
+
+<head>
+  <meta charset="UTF-8">
+  <title>江南逢李龟年</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="heti.min.css">
+  <script src="heti-addon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@waline/client"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery-bundle.css">
+</head>
+    <body>
+        <main class="container">
+            <article class="article heti">
+            
+            </article>
+            <p class="heiti-small"><center><a href='51书堂饮既夜复邀李尚书下马月下赋绝句.html'>上页</a>&nbsp;<a href='index.html#no52'>返回列表</a>&nbsp;<a href='53附：试论杜甫的绝句.html'>下页</a></center></p>
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://dufu-api.vercel.app',
+      visitor: true,
+      dark: 'auto',
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/lightgallery.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js"></script>
+<script>
+const $dynamicGallery = document.getElementById('gallery-demo');
+const dynamicGallery = lightGallery($dynamicGallery, {
+    dynamic: true,
+    plugins: [lgZoom],
+    dynamicEl: [
+        {src: 'img/94.jpg',subHtml: `<h4>江南逢李龟年-1</h4>`, },{src: 'img/95.jpg',subHtml: `<h4>江南逢李龟年-2</h4>`, },{src: 'img/96.jpg',subHtml: `<h4>江南逢李龟年-3</h4>`, },
+    ],
+});
+const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
+for (i = 0; i < dynamicGallerys.length; i++){
+    dynamicGallerys[i].addEventListener('click', function (e) {
+        dynamicGallery.openGallery(parseInt(e.target.name));
+    });
+}
+</script>
+        </main>
+  <script>
+    const heti = new Heti('.article')
+    heti.autoSpacing()
+  </script>
+    </body>
+</html>

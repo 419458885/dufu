@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@waline/client"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery-bundle.css">
 </head>
-
-<body>
-  <main class="container">
-    <article class="article heti">
-      <div class='heti heti--ancient'>
+    <body>
+        <main class="container">
+            <article class="article heti">
+            <div class='heti heti--ancient'>
         <h2>附：试论杜甫的绝句</h2>
         <span class="heti-meta heti-small">熊柏畦</span>
         <p class='heti-x-large'>
@@ -83,17 +84,39 @@
         <p class='heti-x-large'>（这是我早年所写的一篇论文，现在略加修改，附录于此，以作前言的补充。）</p>
         <p class='heti-x-large' style="text-align: right;">一九八一年九月</p>
       </div>
-
-
-    </article>
-    <p class="heiti-small">
-      <center><a href='52江南逢李龟年.html'>上页</a>&nbsp;<a href='index.html#no53'>返回列表</a>&nbsp;下页</center>
-    </p>
-  </main>
+            </article>
+            <p class="heiti-small"><center><a href='52江南逢李龟年.html'>上页</a>&nbsp;<a href='index.html#no53'>返回列表</a>&nbsp;下页</center></p>
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://dufu-api.vercel.app',
+      visitor: true,
+      dark: 'auto',
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/lightgallery.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js"></script>
+<script>
+const $dynamicGallery = document.getElementById('gallery-demo');
+const dynamicGallery = lightGallery($dynamicGallery, {
+    dynamic: true,
+    plugins: [lgZoom],
+    dynamicEl: [
+        {src: 'img/96.jpg',subHtml: `<h4>附：试论杜甫的绝句-1</h4>`, },{src: 'img/97.jpg',subHtml: `<h4>附：试论杜甫的绝句-2</h4>`, },{src: 'img/98.jpg',subHtml: `<h4>附：试论杜甫的绝句-3</h4>`, },{src: 'img/99.jpg',subHtml: `<h4>附：试论杜甫的绝句-4</h4>`, },{src: 'img/100.jpg',subHtml: `<h4>附：试论杜甫的绝句-5</h4>`, },{src: 'img/101.jpg',subHtml: `<h4>附：试论杜甫的绝句-6</h4>`, },{src: 'img/102.jpg',subHtml: `<h4>附：试论杜甫的绝句-7</h4>`, },{src: 'img/103.jpg',subHtml: `<h4>附：试论杜甫的绝句-8</h4>`, },{src: 'img/104.jpg',subHtml: `<h4>附：试论杜甫的绝句-9</h4>`, },
+    ],
+});
+const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
+for (i = 0; i < dynamicGallerys.length; i++){
+    dynamicGallerys[i].addEventListener('click', function (e) {
+        dynamicGallery.openGallery(parseInt(e.target.name));
+    });
+}
+</script>
+        </main>
   <script>
     const heti = new Heti('.article')
     heti.autoSpacing()
   </script>
-</body>
-
+    </body>
 </html>

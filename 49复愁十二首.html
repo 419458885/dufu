@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hans" data-darkmode="light">
+
+<head>
+  <meta charset="UTF-8">
+  <title>复愁十二首</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="heti.min.css">
+  <script src="heti-addon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@waline/client"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery-bundle.css">
+</head>
+    <body>
+        <main class="container">
+            <article class="article heti">
+            
+            </article>
+            <p class="heiti-small"><center><a href='48上卿翁请修武侯庙遗象缺落时崔卿权夔州.html'>上页</a>&nbsp;<a href='index.html#no49'>返回列表</a>&nbsp;<a href='50喜闻盗贼总退口号五首.html'>下页</a></center></p>
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://dufu-api.vercel.app',
+      visitor: true,
+      dark: 'auto',
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/lightgallery.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js"></script>
+<script>
+const $dynamicGallery = document.getElementById('gallery-demo');
+const dynamicGallery = lightGallery($dynamicGallery, {
+    dynamic: true,
+    plugins: [lgZoom],
+    dynamicEl: [
+        {src: 'img/85.jpg',subHtml: `<h4>复愁十二首-1</h4>`, },{src: 'img/86.jpg',subHtml: `<h4>复愁十二首-2</h4>`, },{src: 'img/87.jpg',subHtml: `<h4>复愁十二首-3</h4>`, },{src: 'img/88.jpg',subHtml: `<h4>复愁十二首-4</h4>`, },{src: 'img/89.jpg',subHtml: `<h4>复愁十二首-5</h4>`, },{src: 'img/90.jpg',subHtml: `<h4>复愁十二首-6</h4>`, },
+    ],
+});
+const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
+for (i = 0; i < dynamicGallerys.length; i++){
+    dynamicGallerys[i].addEventListener('click', function (e) {
+        dynamicGallery.openGallery(parseInt(e.target.name));
+    });
+}
+</script>
+        </main>
+  <script>
+    const heti = new Heti('.article')
+    heti.autoSpacing()
+  </script>
+    </body>
+</html>

@@ -940,3 +940,8 @@ a {
     border-color: #333333;
   }
 }
+.gallary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 135, 84);
+    border-color: rgb(25, 135, 84);
+}

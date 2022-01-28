@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hans" data-darkmode="light">
+
+<head>
+  <meta charset="UTF-8">
+  <title>上卿翁请修武侯庙遗象缺落时崔卿权夔州</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="heti.min.css">
+  <script src="heti-addon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@waline/client"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery-bundle.css">
+</head>
+    <body>
+        <main class="container">
+            <article class="article heti">
+            
+            </article>
+            <p class="heiti-small"><center><a href='47承闻河北诸道节度入朝欢喜口号绝句十二首.html'>上页</a>&nbsp;<a href='index.html#no48'>返回列表</a>&nbsp;<a href='49复愁十二首.html'>下页</a></center></p>
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://dufu-api.vercel.app',
+      visitor: true,
+      dark: 'auto',
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/lightgallery.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js"></script>
+<script>
+const $dynamicGallery = document.getElementById('gallery-demo');
+const dynamicGallery = lightGallery($dynamicGallery, {
+    dynamic: true,
+    plugins: [lgZoom],
+    dynamicEl: [
+        {src: 'img/84.jpg',subHtml: `<h4>上卿翁请修武侯庙遗象缺落时崔卿权夔州-1</h4>`, },{src: 'img/85.jpg',subHtml: `<h4>上卿翁请修武侯庙遗象缺落时崔卿权夔州-2</h4>`, },
+    ],
+});
+const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
+for (i = 0; i < dynamicGallerys.length; i++){
+    dynamicGallerys[i].addEventListener('click', function (e) {
+        dynamicGallery.openGallery(parseInt(e.target.name));
+    });
+}
+</script>
+        </main>
+  <script>
+    const heti = new Heti('.article')
+    heti.autoSpacing()
+  </script>
+    </body>
+</html>

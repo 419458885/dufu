@@ -8,14 +8,15 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@waline/client"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery-bundle.css">
 </head>
     <body>
         <main class="container">
             <article class="article heti">
-            <div class='heti heti--ancient'><h2>又于韦处乞大邑瓷碗<sup><a id='ref-01' href='#fn-01'>[1]</a></sup><span class='heti-meta heti-small'>上元元年成都作</span></h2><p class='heti-verse heti-x-large'>大邑烧瓷轻且坚， 　</p><p class='heti-verse heti-x-large'>扣如哀玉锦城传<sup><a id='ref-02' href='#fn-02'>[2]</a></sup>。</p><p class='heti-verse heti-x-large'>君家白碗胜霜雪， 　</p><p class='heti-verse heti-x-large'>急送茅斋也可怜<sup><a id='ref-03' href='#fn-03'>[3]</a></sup>。</p><p class='heti-x-large'></p></div><h3>〔注释〕</h3><div class='heti heti--ancient'><p id='fn-01'><a href='#ref-01' title='移至'>[1]</a>大邑：唐县名，即今四川省大邑县。
-</p><p id='fn-02'><a href='#ref-02' title='移至'>[2]</a>扣：敲。哀玉：玉声清哀，故称哀玉。作者《奉酬薛十二丈判官见赠》：“清文动哀玉”钱注：“言佳士之文，清如鸣玉之哀声也。”
-</p><p id='fn-03'><a href='#ref-03' title='移至'>[3]</a>可怜：可爱。王维《戏题盘石》诗：“可怜盘石临流水，复有垂杨拂酒杯。”李白《清平调》诗之二：“借问汉宫谁得似，可怜飞燕倚新妆”。“可怜”均作“可爱”解。
+            <div class='heti heti--ancient'><h2><button id='gallery-demo' name='0' class='dynamic-gallery-demo'>图6</button>又于韦处乞大邑瓷碗<sup><a id='ref-01'href='#fn-01'>[1]</a></sup><span class='heti-meta heti-small'>上元元年成都作</span></h2><p class='heti-verse heti-x-large'>大邑烧瓷轻且坚， 　</p><p class='heti-verse heti-x-large'>扣如哀玉锦城传<sup><a id='ref-01'href='#fn-01'>[2]</a></sup>。</p><p class='heti-verse heti-x-large'>君家白碗胜霜雪， 　</p><p class='heti-verse heti-x-large'>急送茅斋也可怜<sup><a id='ref-01'href='#fn-01'>[3]</a></sup>。</p><p class='heti-x-large'></p></div><h3>〔注释〕</h3><div class='heti heti--ancient'><p id='fn-01'><a href='#ref-01'title='移至'>[1]</a>大邑：唐县名，即今四川省大邑县。
+</p><p id='fn-01'><a href='#ref-01'title='移至'>[2]</a>扣：敲。哀玉：玉声清哀，故称哀玉。作者《奉酬薛十二丈判官见赠》：“清文动哀玉”钱注：“言佳士之文，清如鸣玉之哀声也。”
+</p><p id='fn-01'><a href='#ref-01'title='移至'>[3]</a>可怜：可爱。王维《戏题盘石》诗：“可怜盘石临流水，复有垂杨拂酒杯。”李白《清平调》诗之二：“借问汉宫谁得似，可怜飞燕倚新妆”。“可怜”均作“可爱”解。
 吴门金氏说：“一瓷碗至微，却用三四层写意，初称其质，次想其声，又羡其色，先说得珍重可爱，因望其急送茅斋。只寻常器皿，经此点染，便成韵事矣。”</p><p class='heti-large'></p></div>
             </article>
             <p class="heiti-small"><center><a href='08凭韦少府班觅松树子栽.html'>上页</a>&nbsp;<a href='index.html#no9'>返回列表</a>&nbsp;<a href='10诣徐卿觅果栽.html'>下页</a></center></p>
@@ -28,6 +29,24 @@
       dark: 'auto',
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/lightgallery.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js"></script>
+<script>
+const $dynamicGallery = document.getElementById('gallery-demo');
+const dynamicGallery = lightGallery($dynamicGallery, {
+    dynamic: true,
+    plugins: [lgZoom],
+    dynamicEl: [
+        {src: 'img/15.jpg',subHtml: `<h4>又于韦处乞大邑瓷碗-1</h4>`, },{src: 'img/16.jpg',subHtml: `<h4>又于韦处乞大邑瓷碗-2</h4>`, },
+    ],
+});
+const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
+for (i = 0; i < dynamicGallerys.length; i++){
+    dynamicGallerys[i].addEventListener('click', function (e) {
+        dynamicGallery.openGallery(parseInt(e.target.name));
+    });
+}
+</script>
         </main>
   <script>
     const heti = new Heti('.article')
