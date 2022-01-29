@@ -40,6 +40,10 @@ const dynamicGallery = lightGallery($dynamicGallery, {
     dynamicEl: [
         {src: 'img/13.jpg',subHtml: `<h4>从韦二明府续处觅绵竹-1</h4>`, },{src: 'img/14.jpg',subHtml: `<h4>从韦二明府续处觅绵竹-2</h4>`, },
     ],
+    mobileSettings: {  
+        showCloseIcon: true,
+        download: false, 
+    }
 });
 const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
 for (i = 0; i < dynamicGallerys.length; i++){

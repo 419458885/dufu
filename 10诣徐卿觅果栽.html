@@ -38,6 +38,10 @@ const dynamicGallery = lightGallery($dynamicGallery, {
     dynamicEl: [
         {src: 'img/16.jpg',subHtml: `<h4>诣徐卿觅果栽-1</h4>`, },
     ],
+    mobileSettings: {  
+        showCloseIcon: true,
+        download: false, 
+    }
 });
 const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
 for (i = 0; i < dynamicGallerys.length; i++){

@@ -36,6 +36,10 @@ const dynamicGallery = lightGallery($dynamicGallery, {
     dynamicEl: [
         {src: 'img/93.jpg',subHtml: `<h4>书堂饮既夜复邀李尚书下马月下赋绝句-1</h4>`, },{src: 'img/94.jpg',subHtml: `<h4>书堂饮既夜复邀李尚书下马月下赋绝句-2</h4>`, },
     ],
+    mobileSettings: {  
+        showCloseIcon: true,
+        download: false, 
+    }
 });
 const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
 for (i = 0; i < dynamicGallerys.length; i++){

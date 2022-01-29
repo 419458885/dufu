@@ -39,6 +39,10 @@ const dynamicGallery = lightGallery($dynamicGallery, {
     dynamicEl: [
         {src: 'img/59.jpg',subHtml: `<h4>八阵图-1</h4>`, },{src: 'img/60.jpg',subHtml: `<h4>八阵图-2</h4>`, },{src: 'img/61.jpg',subHtml: `<h4>八阵图-3</h4>`, },
     ],
+    mobileSettings: {  
+        showCloseIcon: true,
+        download: false, 
+    }
 });
 const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
 for (i = 0; i < dynamicGallerys.length; i++){

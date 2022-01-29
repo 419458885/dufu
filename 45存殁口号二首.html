@@ -41,6 +41,10 @@ const dynamicGallery = lightGallery($dynamicGallery, {
     dynamicEl: [
         {src: 'img/68.jpg',subHtml: `<h4>存殁口号二首-1</h4>`, },{src: 'img/69.jpg',subHtml: `<h4>存殁口号二首-2</h4>`, },
     ],
+    mobileSettings: {  
+        showCloseIcon: true,
+        download: false, 
+    }
 });
 const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
 for (i = 0; i < dynamicGallerys.length; i++){

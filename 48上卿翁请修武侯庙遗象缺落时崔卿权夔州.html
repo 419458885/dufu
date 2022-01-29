@@ -36,6 +36,10 @@ const dynamicGallery = lightGallery($dynamicGallery, {
     dynamicEl: [
         {src: 'img/84.jpg',subHtml: `<h4>上卿翁请修武侯庙遗象缺落时崔卿权夔州-1</h4>`, },{src: 'img/85.jpg',subHtml: `<h4>上卿翁请修武侯庙遗象缺落时崔卿权夔州-2</h4>`, },
     ],
+    mobileSettings: {  
+        showCloseIcon: true,
+        download: false, 
+    }
 });
 const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
 for (i = 0; i < dynamicGallerys.length; i++){

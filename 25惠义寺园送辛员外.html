@@ -37,6 +37,10 @@ const dynamicGallery = lightGallery($dynamicGallery, {
     dynamicEl: [
         {src: 'img/38.jpg',subHtml: `<h4>惠义寺园送辛员外-1</h4>`, },{src: 'img/39.jpg',subHtml: `<h4>惠义寺园送辛员外-2</h4>`, },
     ],
+    mobileSettings: {  
+        showCloseIcon: true,
+        download: false, 
+    }
 });
 const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
 for (i = 0; i < dynamicGallerys.length; i++){

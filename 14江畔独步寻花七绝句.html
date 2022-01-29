@@ -45,6 +45,10 @@ const dynamicGallery = lightGallery($dynamicGallery, {
     dynamicEl: [
         {src: 'img/23.jpg',subHtml: `<h4>江畔独步寻花七绝句-1</h4>`, },{src: 'img/24.jpg',subHtml: `<h4>江畔独步寻花七绝句-2</h4>`, },{src: 'img/25.jpg',subHtml: `<h4>江畔独步寻花七绝句-3</h4>`, },{src: 'img/26.jpg',subHtml: `<h4>江畔独步寻花七绝句-4</h4>`, },
     ],
+    mobileSettings: {  
+        showCloseIcon: true,
+        download: false, 
+    }
 });
 const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
 for (i = 0; i < dynamicGallerys.length; i++){

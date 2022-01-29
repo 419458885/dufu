@@ -36,6 +36,10 @@ const dynamicGallery = lightGallery($dynamicGallery, {
     dynamicEl: [
         {src: 'img/85.jpg',subHtml: `<h4>复愁十二首-1</h4>`, },{src: 'img/86.jpg',subHtml: `<h4>复愁十二首-2</h4>`, },{src: 'img/87.jpg',subHtml: `<h4>复愁十二首-3</h4>`, },{src: 'img/88.jpg',subHtml: `<h4>复愁十二首-4</h4>`, },{src: 'img/89.jpg',subHtml: `<h4>复愁十二首-5</h4>`, },{src: 'img/90.jpg',subHtml: `<h4>复愁十二首-6</h4>`, },
     ],
+    mobileSettings: {  
+        showCloseIcon: true,
+        download: false, 
+    }
 });
 const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
 for (i = 0; i < dynamicGallerys.length; i++){

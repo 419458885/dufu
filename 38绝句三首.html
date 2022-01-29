@@ -40,6 +40,10 @@ const dynamicGallery = lightGallery($dynamicGallery, {
     dynamicEl: [
         {src: 'img/54.jpg',subHtml: `<h4>绝句三首-1</h4>`, },{src: 'img/55.jpg',subHtml: `<h4>绝句三首-2</h4>`, },{src: 'img/56.jpg',subHtml: `<h4>绝句三首-3</h4>`, },
     ],
+    mobileSettings: {  
+        showCloseIcon: true,
+        download: false, 
+    }
 });
 const dynamicGallerys = document.getElementsByClassName('dynamic-gallery-demo');
 for (i = 0; i < dynamicGallerys.length; i++){
