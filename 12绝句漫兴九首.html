@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-Hans" data-darkmode="light">
 
 <head>
@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="heti.min.css">
   <script src="heti-addon.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@waline/client"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.3.0/css/lightgallery-bundle.css">
+  <link  rel="stylesheet"  href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/lightgallery@2.3.0/css/lightgallery-bundle.css">
 </head>
     <body>
         <main class="container">
@@ -30,8 +30,9 @@
             </article>
             <p class="heiti-small"><center><a href='11因崔五侍御寄高彭州一绝.html'>上页</a>&nbsp;<a href='index.html#no12'>返回列表</a>&nbsp;<a href='13春水生二绝.html'>下页</a></center></p>
 <div id="waline"></div>
-  <script>
-    Waline({
+  <script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
       el: '#waline',
       serverURL: 'https://dufu-api.vercel.app',
       visitor: true,
